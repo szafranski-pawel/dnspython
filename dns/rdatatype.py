@@ -105,6 +105,7 @@ class RdataType(dns.enum.IntEnum):
     CAA = 257
     AVC = 258
     AMTRELAY = 260
+    IOT = 4096
     TA = 32768
     DLV = 32769
 
@@ -265,6 +266,7 @@ HINFO = RdataType.HINFO
 MINFO = RdataType.MINFO
 MX = RdataType.MX
 TXT = RdataType.TXT
+IOT = RdataType.IOT
 RP = RdataType.RP
 AFSDB = RdataType.AFSDB
 X25 = RdataType.X25

@@ -15,55 +15,11 @@
 # ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT
 # OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-"""Class ANY (generic) rdata type classes."""
+import dns.rdtypes.txtbase
+import dns.immutable
 
-__all__ = [
-    "AFSDB",
-    "AMTRELAY",
-    "AVC",
-    "CAA",
-    "CDNSKEY",
-    "CDS",
-    "CERT",
-    "CNAME",
-    "CSYNC",
-    "DLV",
-    "DNAME",
-    "DNSKEY",
-    "DS",
-    "EUI48",
-    "EUI64",
-    "GPOS",
-    "HINFO",
-    "HIP",
-    "ISDN",
-    "L32",
-    "L64",
-    "LOC",
-    "LP",
-    "MX",
-    "NID",
-    "NINFO",
-    "NS",
-    "NSEC",
-    "NSEC3",
-    "NSEC3PARAM",
-    "OPENPGPKEY",
-    "OPT",
-    "PTR",
-    "RP",
-    "RRSIG",
-    "RT",
-    "SMIMEA",
-    "SOA",
-    "SPF",
-    "SSHFP",
-    "TKEY",
-    "TLSA",
-    "TSIG",
-    "TXT",
-    "IOT",
-    "URI",
-    "X25",
-    "ZONEMD",
-]
+
+@dns.immutable.immutable
+class IOT(dns.rdtypes.txtbase.TXTBase):
+
+    """IOT record"""
